@@ -29,16 +29,21 @@ void audiotest::slotUpdateVU()
 {
     static qreal previousvalue = 0.0;
 
+    const qreal ffactor = .1;
     qreal v = 0.0;
     qreal newv = 0.0;
 
-    v = audioIOObject->level() * 100.0;
+//    v = audioIOObject->level() * 100.0;
+    v = audioIOObject->level();
+    v = v*v*10000;
 
-    if ( v > 100.0 ) v = 100.0;
+//    if ( v > 100.0 ) v = 100.0;
 //    newv = ((previousvalue + v) / v) + v;
 
+    newv = (v + ffactor*previousvalue)/(1+ffactor);
+//    newv = v;
 #ifdef DEBUG_AUDIO
-    qDebug() << "Lvl: " << QString("%1").arg(newv);
+//    qDebug() << "Lvl: " << QString("%1").arg(newv);
 #endif
     ui->vumeter->setValue(int(newv));
     previousvalue = newv;
