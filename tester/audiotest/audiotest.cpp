@@ -33,8 +33,10 @@ void audiotest::slotUpdateVU()
     qreal newv = 0.0;
 
     v = audioIOObject->level() * 100.0;
+
     if ( v > 100.0 ) v = 100.0;
-    newv = ((previousvalue + v) / v) + v;
+//    newv = ((previousvalue + v) / v) + v;
+
 #ifdef DEBUG_AUDIO
     qDebug() << "Lvl: " << QString("%1").arg(newv);
 #endif
