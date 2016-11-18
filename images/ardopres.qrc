@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>blueled.png</file>
+        <file>greenled.png</file>
+        <file>greyled.png</file>
+        <file>internet-connected.svg</file>
+        <file>redled.png</file>
+        <file>yelled.png</file>
+        <file>configure.png</file>
+    </qresource>
+</RCC>

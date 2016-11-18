@@ -1,0 +1,12 @@
+INPUT(
+./.obj\bufferobject.o
+./.obj\audioio.o
+./.obj\vumeterwidget.o
+./.obj\main.o
+./.obj\audiotest.o
+./.obj\qrc_ardopres.o
+./.obj\moc_audiotest.o
+./.obj\moc_vumeterwidget.o
+./.obj\moc_bufferobject.o
+./.obj\moc_audioio.o
+);

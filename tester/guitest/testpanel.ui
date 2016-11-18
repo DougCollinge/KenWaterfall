@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestPanel</class>
+ <widget class="QDialog" name="TestPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>796</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="grpOptions">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>2</y>
+     <width>621</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #CCC; border-radius: 5px;</string>
+   </property>
+   <property name="title">
+    <string>Test Controls</string>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>24</y>
+      <width>125</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Correction Controls:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONREQ200">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>18</y>
+      <width>117</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONREQ200</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCnt">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>500</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Frames Remaining:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCount">
+    <property name="geometry">
+     <rect>
+      <x>368</x>
+      <y>500</y>
+      <width>35</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="nudRepeats">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>496</y>
+      <width>46</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblRpts">
+    <property name="geometry">
+     <rect>
+      <x>126</x>
+      <y>500</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Repeats:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPlayWav">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>494</y>
+      <width>86</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Play Wave</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="nudSN">
+    <property name="geometry">
+     <rect>
+      <x>494</x>
+      <y>494</y>
+      <width>46</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblSN">
+    <property name="geometry">
+     <rect>
+      <x>414</x>
+      <y>498</y>
+      <width>56</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>S/N (dB)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>426</x>
+      <y>469</y>
+      <width>107</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3Khz Noise BW</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>88</y>
+      <width>145</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Control and ID Frames:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoBreak">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>86</y>
+      <width>79</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BREAK</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoEND">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>112</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>END</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoDISC">
+    <property name="geometry">
+     <rect>
+      <x>258</x>
+      <y>84</y>
+      <width>65</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DISC</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoDataACK">
+    <property name="geometry">
+     <rect>
+      <x>324</x>
+      <y>84</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DataACK</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoDataNAK">
+    <property name="geometry">
+     <rect>
+      <x>324</x>
+      <y>108</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DataNAK</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoIDFrame">
+    <property name="geometry">
+     <rect>
+      <x>426</x>
+      <y>84</y>
+      <width>163</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ID (w/CWID if enabled)</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONNAK200T">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>40</y>
+      <width>119</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONNAK200-T</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONREQ500">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>18</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONREQ500</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONACK500T">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>40</y>
+      <width>129</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONACK500-T</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONREQ1000">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>18</y>
+      <width>117</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONREQ1000</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONREQ2000">
+    <property name="geometry">
+     <rect>
+      <x>494</x>
+      <y>18</y>
+      <width>117</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONREQ2000</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONACK1000T">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>40</y>
+      <width>127</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONACK1000-T</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONACK2000T">
+    <property name="geometry">
+     <rect>
+      <x>494</x>
+      <y>40</y>
+      <width>125</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONACK2000-T</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoCONREJBUSY">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>62</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONREJBUSY</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>142</y>
+      <width>149</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>200 Hz Bandwidth Data</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4PSK200_64">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>162</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4PSK, 100bd_64bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4PSK200_16">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>182</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4PSK, 100bd_16bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo8PSK200_108">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>202</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car8PSK, 100bd_108bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo16QAM_128">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>222</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car16QAM, 128bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK200_32">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>240</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4FSK, 50bd_32bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK200_16">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>260</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4FSK, 50bd_16bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo8FSK200_24">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>280</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car8FSK, 25bd_24bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4PSK500_128">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>160</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>2Car4PSK, 100bd_128bytes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>282</x>
+      <y>142</y>
+      <width>127</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500 Hz Bandwidth Data</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo8PSK500_216">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>180</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>2Car8PSK, 100bd_216bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo16QAM500_256">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>200</y>
+      <width>173</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>2Car16QAM, 100bd_256bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK500_64">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>220</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4FSK, 100bd_64bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK500_32">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>238</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4FSK, 100bd_32bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo16FSK500_32">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>258</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car16FSK, 25bd_32bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo16FSK500_16">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>278</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car16FSK, 100bd_16bytes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>314</y>
+      <width>129</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1000 Hz Bandwidth Data</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4PSK1000_256">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>330</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>4Car4PSK, 100bd_256bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4PSK1000_480">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>348</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>4Car4PSK, 167bd_480bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo8PSK1000_432">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>366</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>4Car8PSK, 100bd_432bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo8PSK1000_636">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>386</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>4Car8PSK, 167bd_636bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK1000_128">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>406</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>2Car4PSK, 100bd_128bytes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>318</y>
+      <width>135</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2000 Hz Bandwidth Data</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4PSK2000_512">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>334</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>8Car4PSK, 100bd_512bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4PSK2000_960">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>352</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>8Car4PSK, 167bd_960bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo8PSK2000_864">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>370</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>8Car8PSK, 100bd_864bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo8PSK2000_1272">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>390</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>8Car8PSK, 167bd_1272bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK2000_256">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>408</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>4Car4FSK, 100bd_256bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK2000_600">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>428</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4FSK, 600bd_600bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdo4FSK2000_200">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>446</y>
+      <width>167</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1Car4FSK, 600bd_200bytes</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdoSounding">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>446</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2K Sounding</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>550</y>
+     <width>603</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #CCC; border-radius: 5px;</string>
+   </property>
+   <property name="title">
+    <string>Basic Protocol Tests</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>58</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FEC Info:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFECInfo">
+    <property name="geometry">
+     <rect>
+      <x>76</x>
+      <y>60</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFECTest">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>20</y>
+      <width>123</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>FEC multicast with ID</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFECAbort">
+    <property name="geometry">
+     <rect>
+      <x>152</x>
+      <y>22</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FEC Abort</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPlainTextEdit" name="console">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>720</y>
+     <width>613</width>
+     <height>71</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSerOpen">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>646</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OPEN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnClose">
+   <property name="geometry">
+    <rect>
+     <x>124</x>
+     <y>646</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CLOSE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,517 @@
+10-11-2016 15:46:42.071 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 15:46:42.093 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 15:46:43.299 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):229]-- Continuing Form Init
+10-11-2016 15:46:43.299 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):230]-- Be sure Logs and Wav folders exist - if not create them
+10-11-2016 15:46:43.300 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):244]-- Folders Verified...continuing by setting milestone timestamp
+10-11-2016 15:46:43.300 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):251]-- Checking for form init
+10-11-2016 15:46:43.300 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 15:46:43.301 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 15:46:43.301 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 15:46:43.301 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 15:46:43.301 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 15:46:43.302 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 15:46:43.302 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 15:46:43.302 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 15:46:43.313 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 15:46:43.314 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 15:46:43.314 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 15:46:43.314 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 15:46:43.314 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 15:46:43.315 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 15:46:43.315 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 15:46:43.315 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 15:46:43.315 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 15:46:43.315 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 15:46:43.316 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 15:46:43.316 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 15:46:43.316 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 15:46:43.316 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 15:46:43.317 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 15:46:43.317 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 15:46:43.317 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 15:46:43.360 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 15:46:43.360 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 15:46:43.360 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 15:46:49.533 UTC  INFO [TncSetup::TncSetup(QWidget*):57] --  Constructing Setup Window.
+10-11-2016 15:46:49.576 UTC  DEBUG [void TncSetup::readSettings():560]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 15:46:49.604 UTC  WARNING [:0] --  Could not parse stylesheet of object 0x8b75548
+10-11-2016 15:46:49.605 UTC  WARNING [:0] --  Could not parse stylesheet of object 0x8b75548
+10-11-2016 15:46:51.838 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "sysdefault:CARD=Intel"
+10-11-2016 15:46:51.838 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "default"
+10-11-2016 15:46:51.838 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "pulse"
+10-11-2016 15:46:51.839 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "front:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.839 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "surround21:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.839 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "surround40:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.839 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "surround41:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.840 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "surround50:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.840 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "surround51:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.840 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "surround71:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.841 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "dmix:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.841 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "dsnoop:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.841 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "hw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.841 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.841 UTC  DEBUG [void TncSetup::initForm():355]-- add to cbo:  "default"
+10-11-2016 15:46:51.842 UTC  DEBUG [void TncSetup::initForm():362]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.842 UTC  DEBUG [void TncSetup::initForm():362]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.842 UTC  DEBUG [void TncSetup::initForm():362]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.842 UTC  DEBUG [void TncSetup::initForm():362]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.843 UTC  DEBUG [void TncSetup::initForm():362]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.843 UTC  DEBUG [void TncSetup::initForm():362]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.843 UTC  DEBUG [void TncSetup::initForm():362]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.844 UTC  DEBUG [void TncSetup::initForm():362]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.844 UTC  DEBUG [void TncSetup::initForm():362]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.844 UTC  DEBUG [void TncSetup::initForm():362]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.844 UTC  DEBUG [void TncSetup::initForm():362]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.845 UTC  DEBUG [void TncSetup::initForm():362]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.845 UTC  DEBUG [void TncSetup::initForm():362]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.845 UTC  DEBUG [void TncSetup::initForm():362]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.845 UTC  DEBUG [void TncSetup::initForm():377]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.846 UTC  DEBUG [void TncSetup::initForm():377]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.846 UTC  DEBUG [void TncSetup::initForm():377]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.846 UTC  DEBUG [void TncSetup::initForm():377]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.846 UTC  DEBUG [void TncSetup::initForm():377]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.847 UTC  DEBUG [void TncSetup::initForm():377]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.847 UTC  DEBUG [void TncSetup::initForm():377]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.847 UTC  DEBUG [void TncSetup::initForm():377]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.847 UTC  DEBUG [void TncSetup::initForm():377]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.848 UTC  DEBUG [void TncSetup::initForm():377]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.848 UTC  DEBUG [void TncSetup::initForm():377]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.849 UTC  DEBUG [void TncSetup::initForm():377]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.849 UTC  DEBUG [void TncSetup::initForm():377]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:46:51.849 UTC  DEBUG [void TncSetup::initForm():377]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:47:10.912 UTC  DEBUG [void TncSetup::saveSettings():631]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 15:47:11.006 UTC  INFO [void TncSetup::slotOk(bool):249] --  Settings saved...restarting audio
+10-11-2016 15:47:11.013 UTC  DEBUG [void TNCPanel::slotSetupTNC(bool):855]-- Setup settings accepted...sound restarting.
+10-11-2016 15:47:11.014 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 15:47:11.015 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 15:47:11.015 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 15:47:11.016 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 15:47:11.016 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 15:47:11.016 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 15:47:11.017 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 15:47:11.017 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 15:47:11.037 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 15:47:11.037 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 15:47:11.038 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 15:47:11.038 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 15:47:11.038 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 15:47:11.038 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 15:47:11.039 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 15:47:11.039 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 15:47:11.039 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 15:47:11.039 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 15:47:11.040 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 15:47:11.040 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 15:47:11.040 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 15:47:11.040 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 15:47:11.041 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 15:47:11.041 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 15:47:11.041 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 15:47:11.097 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 15:47:11.097 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 15:47:11.097 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 15:53:58.292 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 15:53:58.313 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 15:53:59.525 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):229]-- Continuing Form Init
+10-11-2016 15:53:59.525 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):230]-- Be sure Logs and Wav folders exist - if not create them
+10-11-2016 15:53:59.525 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):244]-- Folders Verified...continuing by setting milestone timestamp
+10-11-2016 15:53:59.526 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):251]-- Checking for form init
+10-11-2016 15:53:59.526 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 15:53:59.526 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 15:53:59.527 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 15:53:59.527 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 15:53:59.527 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 15:53:59.527 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 15:53:59.528 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 15:53:59.528 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 15:53:59.538 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 15:53:59.539 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 15:53:59.539 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 15:53:59.539 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 15:53:59.539 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 15:53:59.540 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 15:53:59.540 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 15:53:59.540 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 15:53:59.541 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 15:53:59.541 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 15:53:59.541 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 15:53:59.541 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 15:53:59.542 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 15:53:59.542 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 15:53:59.542 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 15:53:59.543 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 15:53:59.543 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 15:53:59.585 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 15:53:59.585 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 15:53:59.585 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 15:54:04.078 UTC  INFO [TncSetup::TncSetup(QWidget*):57] --  Constructing Setup Window.
+10-11-2016 15:54:04.121 UTC  DEBUG [void TncSetup::readSettings():579]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 15:54:06.403 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "sysdefault:CARD=Intel"
+10-11-2016 15:54:06.403 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "default"
+10-11-2016 15:54:06.404 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "pulse"
+10-11-2016 15:54:06.404 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "front:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.404 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround21:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.405 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround40:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.405 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround41:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.405 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround50:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.405 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround51:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.406 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround71:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.406 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "dmix:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.406 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "dsnoop:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.407 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "hw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.407 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.407 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "default"
+10-11-2016 15:54:06.408 UTC  DEBUG [void TncSetup::initForm():381]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.408 UTC  DEBUG [void TncSetup::initForm():381]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.408 UTC  DEBUG [void TncSetup::initForm():381]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.408 UTC  DEBUG [void TncSetup::initForm():381]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.409 UTC  DEBUG [void TncSetup::initForm():381]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.409 UTC  DEBUG [void TncSetup::initForm():381]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.409 UTC  DEBUG [void TncSetup::initForm():381]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.410 UTC  DEBUG [void TncSetup::initForm():381]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.410 UTC  DEBUG [void TncSetup::initForm():381]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.410 UTC  DEBUG [void TncSetup::initForm():381]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.411 UTC  DEBUG [void TncSetup::initForm():381]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.411 UTC  DEBUG [void TncSetup::initForm():381]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.411 UTC  DEBUG [void TncSetup::initForm():381]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.412 UTC  DEBUG [void TncSetup::initForm():381]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.412 UTC  DEBUG [void TncSetup::initForm():396]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.412 UTC  DEBUG [void TncSetup::initForm():396]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.413 UTC  DEBUG [void TncSetup::initForm():396]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.413 UTC  DEBUG [void TncSetup::initForm():396]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.413 UTC  DEBUG [void TncSetup::initForm():396]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.414 UTC  DEBUG [void TncSetup::initForm():396]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.414 UTC  DEBUG [void TncSetup::initForm():396]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.414 UTC  DEBUG [void TncSetup::initForm():396]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.414 UTC  DEBUG [void TncSetup::initForm():396]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.415 UTC  DEBUG [void TncSetup::initForm():396]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.415 UTC  DEBUG [void TncSetup::initForm():396]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.415 UTC  DEBUG [void TncSetup::initForm():396]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.416 UTC  DEBUG [void TncSetup::initForm():396]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:06.416 UTC  DEBUG [void TncSetup::initForm():396]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:54:39.890 UTC  DEBUG [void TNCPanel::slotSetupTNC(bool):866]-- Setup settings rejected...sound not restarted.
+10-11-2016 15:55:39.364 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 15:55:40.358 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 15:55:45.588 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):229]-- Continuing Form Init
+10-11-2016 15:55:45.588 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):230]-- Be sure Logs and Wav folders exist - if not create them
+10-11-2016 15:55:45.589 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):244]-- Folders Verified...continuing by setting milestone timestamp
+10-11-2016 15:55:45.589 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):251]-- Checking for form init
+10-11-2016 15:55:45.589 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 15:55:45.590 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 15:55:45.590 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 15:55:45.591 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 15:55:45.591 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 15:55:45.591 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 15:55:45.592 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 15:55:45.592 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 15:55:45.978 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 15:55:45.979 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 15:55:45.979 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 15:55:45.979 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 15:55:45.980 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 15:55:45.980 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 15:55:45.981 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 15:55:45.981 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 15:55:45.981 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 15:55:45.982 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 15:55:45.982 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 15:55:45.982 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 15:55:45.983 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 15:55:45.983 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 15:55:45.983 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 15:55:45.984 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 15:55:45.986 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 15:55:46.143 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 15:55:46.143 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 15:55:46.143 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 15:55:50.352 UTC  INFO [TncSetup::TncSetup(QWidget*):57] --  Constructing Setup Window.
+10-11-2016 15:55:50.393 UTC  DEBUG [void TncSetup::readSettings():579]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 15:55:59.944 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "sysdefault:CARD=Intel"
+10-11-2016 15:55:59.945 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "default"
+10-11-2016 15:55:59.945 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "pulse"
+10-11-2016 15:55:59.945 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "front:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.946 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround21:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.946 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround40:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.946 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround41:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.947 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround50:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.947 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround51:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.947 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "surround71:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.948 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "dmix:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.948 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "dsnoop:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.949 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "hw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.949 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.949 UTC  DEBUG [void TncSetup::initForm():374]-- add to cbo:  "default"
+10-11-2016 15:55:59.950 UTC  DEBUG [void TncSetup::initForm():381]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.950 UTC  DEBUG [void TncSetup::initForm():381]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.950 UTC  DEBUG [void TncSetup::initForm():381]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.951 UTC  DEBUG [void TncSetup::initForm():381]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.951 UTC  DEBUG [void TncSetup::initForm():381]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.951 UTC  DEBUG [void TncSetup::initForm():381]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.952 UTC  DEBUG [void TncSetup::initForm():381]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.953 UTC  DEBUG [void TncSetup::initForm():381]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.953 UTC  DEBUG [void TncSetup::initForm():381]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.954 UTC  DEBUG [void TncSetup::initForm():381]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.954 UTC  DEBUG [void TncSetup::initForm():381]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.954 UTC  DEBUG [void TncSetup::initForm():381]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.955 UTC  DEBUG [void TncSetup::initForm():381]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.955 UTC  DEBUG [void TncSetup::initForm():381]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.955 UTC  DEBUG [void TncSetup::initForm():396]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.956 UTC  DEBUG [void TncSetup::initForm():396]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.956 UTC  DEBUG [void TncSetup::initForm():396]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.957 UTC  DEBUG [void TncSetup::initForm():396]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.957 UTC  DEBUG [void TncSetup::initForm():396]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.957 UTC  DEBUG [void TncSetup::initForm():396]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.958 UTC  DEBUG [void TncSetup::initForm():396]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.958 UTC  DEBUG [void TncSetup::initForm():396]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.958 UTC  DEBUG [void TncSetup::initForm():396]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.959 UTC  DEBUG [void TncSetup::initForm():396]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.959 UTC  DEBUG [void TncSetup::initForm():396]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.959 UTC  DEBUG [void TncSetup::initForm():396]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.960 UTC  DEBUG [void TncSetup::initForm():396]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:55:59.960 UTC  DEBUG [void TncSetup::initForm():396]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:58:57.467 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 15:58:58.426 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 15:59:03.599 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):229]-- Continuing Form Init
+10-11-2016 15:59:03.599 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):230]-- Be sure Logs and Wav folders exist - if not create them
+10-11-2016 15:59:03.600 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):244]-- Folders Verified...continuing by setting milestone timestamp
+10-11-2016 15:59:03.600 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):251]-- Checking for form init
+10-11-2016 15:59:03.601 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 15:59:03.601 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 15:59:03.601 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 15:59:03.602 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 15:59:03.602 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 15:59:03.603 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 15:59:03.603 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 15:59:03.603 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 15:59:03.929 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 15:59:03.930 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 15:59:03.930 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 15:59:03.931 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 15:59:03.931 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 15:59:03.931 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 15:59:03.932 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 15:59:03.932 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 15:59:03.932 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 15:59:03.933 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 15:59:03.933 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 15:59:03.933 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 15:59:03.934 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 15:59:03.934 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 15:59:03.935 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 15:59:03.935 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 15:59:03.935 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 15:59:04.090 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 15:59:04.090 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 15:59:04.090 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 15:59:08.074 UTC  INFO [TncSetup::TncSetup(QWidget*):57] --  Constructing Setup Window.
+10-11-2016 15:59:08.114 UTC  DEBUG [void TncSetup::readSettings():582]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 15:59:17.414 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "sysdefault:CARD=Intel"
+10-11-2016 15:59:17.415 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "default"
+10-11-2016 15:59:17.416 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "pulse"
+10-11-2016 15:59:17.417 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "front:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.417 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "surround21:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.417 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "surround40:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.418 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "surround41:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.418 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "surround50:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.419 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "surround51:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.419 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "surround71:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.420 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "dmix:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.420 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "dsnoop:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.421 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "hw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.421 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.422 UTC  DEBUG [void TncSetup::initForm():377]-- add to cbo:  "default"
+10-11-2016 15:59:17.422 UTC  DEBUG [void TncSetup::initForm():384]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.422 UTC  DEBUG [void TncSetup::initForm():384]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.423 UTC  DEBUG [void TncSetup::initForm():384]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.423 UTC  DEBUG [void TncSetup::initForm():384]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.423 UTC  DEBUG [void TncSetup::initForm():384]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.424 UTC  DEBUG [void TncSetup::initForm():384]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.424 UTC  DEBUG [void TncSetup::initForm():384]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.425 UTC  DEBUG [void TncSetup::initForm():384]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.425 UTC  DEBUG [void TncSetup::initForm():384]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.425 UTC  DEBUG [void TncSetup::initForm():384]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.426 UTC  DEBUG [void TncSetup::initForm():384]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.426 UTC  DEBUG [void TncSetup::initForm():384]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.427 UTC  DEBUG [void TncSetup::initForm():384]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.427 UTC  DEBUG [void TncSetup::initForm():384]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.427 UTC  DEBUG [void TncSetup::initForm():399]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.428 UTC  DEBUG [void TncSetup::initForm():399]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.428 UTC  DEBUG [void TncSetup::initForm():399]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.429 UTC  DEBUG [void TncSetup::initForm():399]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.429 UTC  DEBUG [void TncSetup::initForm():399]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.429 UTC  DEBUG [void TncSetup::initForm():399]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.430 UTC  DEBUG [void TncSetup::initForm():399]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.430 UTC  DEBUG [void TncSetup::initForm():399]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.430 UTC  DEBUG [void TncSetup::initForm():399]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.431 UTC  DEBUG [void TncSetup::initForm():399]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.431 UTC  DEBUG [void TncSetup::initForm():399]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.432 UTC  DEBUG [void TncSetup::initForm():399]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.432 UTC  DEBUG [void TncSetup::initForm():399]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 15:59:17.433 UTC  DEBUG [void TncSetup::initForm():399]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:04:21.078 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 16:04:21.097 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 16:04:22.302 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):229]-- Continuing Form Init
+10-11-2016 16:04:22.302 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):230]-- Be sure Logs and Wav folders exist - if not create them
+10-11-2016 16:04:22.303 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):244]-- Folders Verified...continuing by setting milestone timestamp
+10-11-2016 16:04:22.303 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):251]-- Checking for form init
+10-11-2016 16:04:22.304 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 16:04:22.304 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 16:04:22.305 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 16:04:22.305 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 16:04:22.305 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 16:04:22.306 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 16:04:22.306 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 16:04:22.307 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 16:04:22.317 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 16:04:22.317 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 16:04:22.318 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 16:04:22.318 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 16:04:22.318 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 16:04:22.319 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 16:04:22.319 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 16:04:22.320 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 16:04:22.320 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 16:04:22.321 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 16:04:22.321 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 16:04:22.321 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 16:04:22.322 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 16:04:22.322 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 16:04:22.322 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 16:04:22.323 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 16:04:22.323 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 16:04:22.364 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 16:04:22.364 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 16:04:22.365 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 16:04:26.380 UTC  INFO [TncSetup::TncSetup(QWidget*):58] --  Constructing Setup Window.
+10-11-2016 16:04:26.415 UTC  DEBUG [void TncSetup::readSettings():580]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 16:04:42.295 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 16:04:43.250 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 16:04:48.479 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):229]-- Continuing Form Init
+10-11-2016 16:04:48.479 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):230]-- Be sure Logs and Wav folders exist - if not create them
+10-11-2016 16:04:48.479 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):244]-- Folders Verified...continuing by setting milestone timestamp
+10-11-2016 16:04:48.480 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):251]-- Checking for form init
+10-11-2016 16:04:48.481 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 16:04:48.481 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 16:04:48.482 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 16:04:48.482 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 16:04:48.482 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 16:04:48.483 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 16:04:48.483 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 16:04:48.484 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 16:04:48.824 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 16:04:48.825 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 16:04:48.825 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 16:04:48.826 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 16:04:48.827 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 16:04:48.827 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 16:04:48.827 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 16:04:48.828 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 16:04:48.828 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 16:04:48.829 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 16:04:48.829 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 16:04:48.830 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 16:04:48.830 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 16:04:48.831 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 16:04:48.832 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 16:04:48.832 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 16:04:48.833 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 16:04:48.993 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 16:04:48.993 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 16:04:48.994 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 16:04:52.538 UTC  INFO [TncSetup::TncSetup(QWidget*):58] --  Constructing Setup Window.
+10-11-2016 16:04:52.561 UTC  DEBUG [void TncSetup::readSettings():580]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 16:11:41.233 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 16:11:42.204 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 16:11:47.460 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):229]-- Continuing Form Init
+10-11-2016 16:11:47.461 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):230]-- Be sure Logs and Wav folders exist - if not create them
+10-11-2016 16:11:47.461 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):244]-- Folders Verified...continuing by setting milestone timestamp
+10-11-2016 16:11:47.462 UTC  DEBUG [virtual void TNCPanel::showEvent(QShowEvent*):251]-- Checking for form init
+10-11-2016 16:11:47.462 UTC  DEBUG [void TNCPanel::readSettings():1446]-- Reading Settings from ardop_tnc.ini...
+10-11-2016 16:11:47.463 UTC  DEBUG [void TNCPanel::readSettings():1525]-- Reading Settings complete...returning
+10-11-2016 16:11:47.463 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 16:11:47.464 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 16:11:47.464 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 16:11:47.465 UTC  INFO [void TNCPanel::initializeAudio():1074] --  Set up the audio IO device specified in settings
+10-11-2016 16:11:47.465 UTC  INFO [void TNCPanel::initializeAudio():1075] --  - - - is the setting 'default' ?
+10-11-2016 16:11:47.465 UTC  INFO [void TNCPanel::initializeAudio():1114] --  No - so find the device  "plughw:CARD=Intel,DEV=0" in the available devices
+10-11-2016 16:11:47.784 UTC  INFO [void TNCPanel::initializeAudio():1151] --  Setting audio IO device  "plughw:CARD=Intel,DEV=0" to nearest format. 
+10-11-2016 16:11:47.784 UTC  DEBUG [void TNCPanel::initializeAudio():1153]-- Note: Format must be set before any other IO function is called (like start or writeData() )
+10-11-2016 16:11:47.785 UTC  DEBUG [void TNCPanel::initializeAudio():1160]-- Format set continuing to init Audio
+10-11-2016 16:11:47.785 UTC  DEBUG [AudioIO::AudioIO(QObject*):15]-- Constructing Audio IODevice
+10-11-2016 16:11:47.786 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):35]-- Setting Audio Format from params
+10-11-2016 16:11:47.786 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):36]-- Audio Format:
+10-11-2016 16:11:47.786 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):40]--    Byte: LITTLE ENDIAN
+10-11-2016 16:11:47.787 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):41]--    Ch: "2"
+10-11-2016 16:11:47.787 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):42]-- Codec: "audio/pcm"
+10-11-2016 16:11:47.788 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):43]--    Sz: "16"
+10-11-2016 16:11:47.788 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):44]--  Rate: "8000"
+10-11-2016 16:11:47.789 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):46]--   Typ: SignedInt
+10-11-2016 16:11:47.789 UTC  DEBUG [void AudioIO::setAudioFormat(QAudioFormat):109]-- Audio Format Set....exiting
+10-11-2016 16:11:47.789 UTC  INFO [void TNCPanel::initializeAudio():1174] --  Input Dev: "sysdefault:CARD=Intel"
+10-11-2016 16:11:47.790 UTC  INFO [void TNCPanel::createAudioInput():1185] --  Creating Audio Input Device with  "sysdefault:CARD=Intel"
+10-11-2016 16:11:47.790 UTC  INFO [void TNCPanel::createAudioInput():1189] --  Setting Audio Input volume to  "75"
+10-11-2016 16:11:47.791 UTC  INFO [void TNCPanel::createAudioInput():1193] --  Starting Audio Input Device 
+10-11-2016 16:11:47.942 UTC  INFO [void TNCPanel::createAudioInput():1206] --  Starting Audio IO Device 
+10-11-2016 16:11:47.942 UTC  DEBUG [void AudioIO::start():133]-- Audio IODevice open...exiting
+10-11-2016 16:11:47.943 UTC  DEBUG [void TNCPanel::createAudioInput():1220]-- AUDIO IO Object has started ...
+10-11-2016 16:12:05.342 UTC  INFO [TncSetup::TncSetup(QWidget*):58] --  Constructing Setup Window.
+10-11-2016 16:12:05.374 UTC  DEBUG [void TncSetup::readSettings():587]-- "/home/ken/Projects/C++/ardop/bin/ardop_tnc.ini"
+10-11-2016 16:12:14.828 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "sysdefault:CARD=Intel"
+10-11-2016 16:12:14.829 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "default"
+10-11-2016 16:12:14.829 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "pulse"
+10-11-2016 16:12:14.830 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "front:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.830 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "surround21:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.831 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "surround40:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.831 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "surround41:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.831 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "surround50:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.832 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "surround51:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.833 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "surround71:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.833 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "dmix:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.833 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "dsnoop:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.834 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "hw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.834 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.835 UTC  DEBUG [void TncSetup::initForm():382]-- add to cbo:  "default"
+10-11-2016 16:12:14.835 UTC  DEBUG [void TncSetup::initForm():389]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.836 UTC  DEBUG [void TncSetup::initForm():389]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.836 UTC  DEBUG [void TncSetup::initForm():389]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.837 UTC  DEBUG [void TncSetup::initForm():389]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.837 UTC  DEBUG [void TncSetup::initForm():389]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.838 UTC  DEBUG [void TncSetup::initForm():389]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.838 UTC  DEBUG [void TncSetup::initForm():389]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.839 UTC  DEBUG [void TncSetup::initForm():389]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.839 UTC  DEBUG [void TncSetup::initForm():389]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.840 UTC  DEBUG [void TncSetup::initForm():389]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.840 UTC  DEBUG [void TncSetup::initForm():389]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.841 UTC  DEBUG [void TncSetup::initForm():389]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.841 UTC  DEBUG [void TncSetup::initForm():389]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.842 UTC  DEBUG [void TncSetup::initForm():389]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.842 UTC  DEBUG [void TncSetup::initForm():404]-- "0"  cbo: "sysdefault:CARD=Intel" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.843 UTC  DEBUG [void TncSetup::initForm():404]-- "1"  cbo: "default" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.843 UTC  DEBUG [void TncSetup::initForm():404]-- "2"  cbo: "pulse" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.844 UTC  DEBUG [void TncSetup::initForm():404]-- "3"  cbo: "front:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.844 UTC  DEBUG [void TncSetup::initForm():404]-- "4"  cbo: "surround21:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.845 UTC  DEBUG [void TncSetup::initForm():404]-- "5"  cbo: "surround40:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.845 UTC  DEBUG [void TncSetup::initForm():404]-- "6"  cbo: "surround41:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.846 UTC  DEBUG [void TncSetup::initForm():404]-- "7"  cbo: "surround50:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.846 UTC  DEBUG [void TncSetup::initForm():404]-- "8"  cbo: "surround51:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.847 UTC  DEBUG [void TncSetup::initForm():404]-- "9"  cbo: "surround71:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.847 UTC  DEBUG [void TncSetup::initForm():404]-- "10"  cbo: "dmix:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.848 UTC  DEBUG [void TncSetup::initForm():404]-- "11"  cbo: "dsnoop:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.848 UTC  DEBUG [void TncSetup::initForm():404]-- "12"  cbo: "hw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:12:14.849 UTC  DEBUG [void TncSetup::initForm():404]-- "13"  cbo: "plughw:CARD=Intel,DEV=0" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:57:25.536 UTC  INFO [TNCPanel::TNCPanel():130] --  TNC panel initializing
+10-11-2016 16:57:25.674 UTC  INFO [TNCPanel::TNCPanel():163] --  finding available audio devices
+10-11-2016 16:57:25.809 UTC  INFO [void TNCPanel::initializeFromIni():991] --  Restoring settings read from .ini
+10-11-2016 16:57:25.813 UTC  INFO [void TNCPanel::initializeAudio():1058] --  Initializing Audio Devices
+10-11-2016 16:57:25.820 UTC  DEBUG [void TNCPanel::initializeAudio():1063]-- Set up the audio engine with default format and test
+10-11-2016 16:57:31.192 UTC  INFO [TncSetup::TncSetup(QWidget*):58] --  Constructing Setup Window.
+10-11-2016 16:57:31.512 UTC  DEBUG [void TncSetup::initForm():383]-- add to cbo:  "Speakers (High Definition Audio Device)"
+10-11-2016 16:57:31.517 UTC  DEBUG [void TncSetup::initForm():383]-- add to cbo:  "Headphones (High Definition Audio Device)"
+10-11-2016 16:57:31.521 UTC  DEBUG [void TncSetup::initForm():390]-- "0"  cbo: "Speakers (High Definition Audio Device)" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:57:31.523 UTC  DEBUG [void TncSetup::initForm():390]-- "1"  cbo: "Headphones (High Definition Audio Device)" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:57:31.525 UTC  DEBUG [void TncSetup::initForm():405]-- "0"  cbo: "Microphone (High Definition Audio Device)" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:57:31.527 UTC  DEBUG [void TncSetup::initForm():405]-- "1"  cbo: "Microphone (USB Audio CODEC )" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:57:31.530 UTC  DEBUG [void TncSetup::initForm():405]-- "2"  cbo: "Line In (High Definition Audio Device)" =? "plughw:CARD=Intel,DEV=0"
+10-11-2016 16:58:06.987 UTC  WARNING [void TncSetup::slotOk(bool):218] --  "You must select a playback device and sample rateInvalid Sample Rate"
+10-11-2016 16:58:11.299 UTC  WARNING [void TncSetup::slotOk(bool):218] --  "You must select a playback device and sample rateInvalid Sample Rate"
+10-11-2016 16:58:12.714 UTC  DEBUG [void TNCPanel::slotSetupTNC(bool):866]-- Setup settings rejected...sound not restarted.

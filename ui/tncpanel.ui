@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TNCPanel</class>
+ <widget class="QDialog" name="TNCPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>247</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="fraLed">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>30</y>
+     <width>580</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>580</width>
+     <height>37</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1610</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Liberation Sans</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QLabel" name="lblRX">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>16</y>
+      <width>25</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledRx">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/greenled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledTx">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/redled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTX">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>16</y>
+      <width>25</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledConn">
+    <property name="geometry">
+     <rect>
+      <x>74</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/greenled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCon">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>16</y>
+      <width>35</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONN</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledTCP">
+    <property name="geometry">
+     <rect>
+      <x>414</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/greenled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLEDTCP">
+    <property name="geometry">
+     <rect>
+      <x>408</x>
+      <y>16</y>
+      <width>35</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TCP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledIRS">
+    <property name="geometry">
+     <rect>
+      <x>122</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/greenled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledISS">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/blueled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledChg">
+    <property name="geometry">
+     <rect>
+      <x>172</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/yelled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIRS">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>16</y>
+      <width>25</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IRS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCHG">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>16</y>
+      <width>25</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BRK</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblISS">
+    <property name="geometry">
+     <rect>
+      <x>228</x>
+      <y>16</y>
+      <width>25</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ISS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledCAR">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Leader Carrier Detected</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/blueled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCAR">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>16</y>
+      <width>25</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CAR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledBZY">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Leader Carrier Detected</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/blueled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblBZY">
+    <property name="geometry">
+     <rect>
+      <x>278</x>
+      <y>16</y>
+      <width>33</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BUSY</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ledSND">
+    <property name="geometry">
+     <rect>
+      <x>456</x>
+      <y>2</y>
+      <width>22</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../images/ardopres.qrc">:/image/greenled.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLEDSND">
+    <property name="geometry">
+     <rect>
+      <x>448</x>
+      <y>16</y>
+      <width>35</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SND</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lblRxFrame">
+   <property name="geometry">
+    <rect>
+     <x>494</x>
+     <y>72</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Rx Frame:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOffset">
+   <property name="geometry">
+    <rect>
+     <x>327</x>
+     <y>76</y>
+     <width>43</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Offset:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLatency">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>154</y>
+     <width>87</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="qConst" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>72</y>
+     <width>139</width>
+     <height>127</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTxFrameTxt">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>134</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="midLineWidth">
+    <number>2</number>
+   </property>
+   <property name="text">
+    <string>TCP Connecting...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblHost">
+   <property name="geometry">
+    <rect>
+     <x>464</x>
+     <y>176</y>
+     <width>59</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Host TCP:</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="grpDisp">
+   <property name="geometry">
+    <rect>
+     <x>436</x>
+     <y>94</y>
+     <width>47</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #ccc;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="optWF">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>4</y>
+      <width>49</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;</string>
+    </property>
+    <property name="text">
+     <string>WF</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optSP">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>26</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;</string>
+    </property>
+    <property name="text">
+     <string>SP</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optOFF">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>50</y>
+      <width>49</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;</string>
+    </property>
+    <property name="text">
+     <string>OFF</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lblTxBlk">
+   <property name="geometry">
+    <rect>
+     <x>494</x>
+     <y>116</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tx Frame:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtOffset">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>76</y>
+     <width>59</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+00.0 Hz</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txtCentFreq">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>188</y>
+     <width>105</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="midLineWidth">
+    <number>2</number>
+   </property>
+   <property name="text">
+    <string>CF: 1500 Hz</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblPlus">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>186</y>
+     <width>45</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+1200</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblRxFrameTxt">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>90</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="midLineWidth">
+    <number>2</number>
+   </property>
+   <property name="text">
+    <string>TCP Connecting...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTCP">
+   <property name="geometry">
+    <rect>
+     <x>514</x>
+     <y>176</y>
+     <width>119</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="midLineWidth">
+    <number>2</number>
+   </property>
+   <property name="text">
+    <string>TCP Connecting...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblMinus">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>188</y>
+     <width>45</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-1200</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="menuwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>0</y>
+     <width>635</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="VUMeterWidget" name="vumeter" native="true">
+   <property name="geometry">
+    <rect>
+     <x>148</x>
+     <y>78</y>
+     <width>175</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Liberation Sans</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QDial" name="ctrlVol">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>102</y>
+     <width>50</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>100</number>
+   </property>
+   <property name="value">
+    <number>70</number>
+   </property>
+   <property name="notchTarget">
+    <double>5.000000000000000</double>
+   </property>
+   <property name="notchesVisible">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>VUMeterWidget</class>
+   <extends>QWidget</extends>
+   <header>vumeterwidget.hpp</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../images/ardopres.qrc"/>
+ </resources>
+ <connections/>
+</ui>
