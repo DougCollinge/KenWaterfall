@@ -9,7 +9,7 @@ audiotest::audiotest(QWidget *parent) : QMainWindow(parent)
     ui->setupUi(this);
 
     ui->ledSND->setEnabled(false);
-    initializeAudio();
+    initializeAudio();g
 }
 
 void audiotest::changeEvent(QEvent *e)
